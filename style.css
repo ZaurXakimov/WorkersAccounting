@@ -1,0 +1,155 @@
+html,body{font-family: Bahnschrift}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead tr {
+    color: #ffffff; background: #033E6B;
+}
+table thead tr td {
+    border: 1px solid #000000; text-align: center; height: 30px;
+}
+table tbody tr td {
+    border: 1px solid #e8e9eb; height: 35px;
+}
+table tbody tr:nth-child(2n) {
+    background: #f4f4f4;
+}
+table tbody tr:hover {
+    background: #66A3D2;
+}
+
+.addProf{
+    text-align: center;
+}
+
+.mainTable{
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.buttonsDiv{
+    padding-bottom: 10px;
+}
+.positiveBtn {
+    background-color: #033E6B;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.negativeBtn{
+    background-color: #bf5252;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tablink {
+    background-color: #66A3D2;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tablink:hover {
+  background-color: #3F92D2;
+}
+.tabcontent {
+  display: none;
+  padding: 40px 20px;
+  height: 100%;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 60%;
+  border-radius: 10px;
+}
+.modal-content div{
+    padding-left: 24%;
+    padding-top: 10%;
+}
+.modal-content div input{
+    width: 300px;
+    font-size: 14px;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
+.modal-content div button{
+    margin-left: 22%;
+    margin-top: 5%;
+    border-radius: 6px;
+    background-color: #5f8caf;
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.tabBtns{
+    width: 75%;
+    margin: 0 auto;
+}
+#addProfChargeBtn{
+    display: flex;
+    margin-top: 20px;
+}
+#professionsSelect{
+    width: 400px;
+    height: 200px;
+}
+.chargeTabBtns{
+    background-color: #033E6B;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
