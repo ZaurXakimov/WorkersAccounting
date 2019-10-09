@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Учёт сотрудников</title>
+        <script type="text/javascript" src="js/workersTab.js"></script>
+        <script type="text/javascript" src="js/professionsTab.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+    </head>
+    <body onload="document.getElementById('defaultOpen').click();">
+
+        <div class="tabBtns">
+            <button class="tablink" onclick="openPage('List', this, '#0B61A4')" id="defaultOpen">Список сотрудников</button>
+            <button class="tablink" onclick="openPage('EditProf', this, '#0B61A4')">Специальности</button>
+        </div>
+
+        <div id="List" class="mainTable tabcontent">
+            <div class="buttonsDiv">
+                <button onclick="getUsers(1);" class="positiveBtn">Добавить работника</button>
+                <button id="editRowBtn" class="positiveBtn" onclick="createMdlEditWorker(this);" style="display: none">Редактировать работника</button>
+                <button id="deleteRowBtn" class="negativeBtn" onclick="deleteWorker();" style="display: none">Удалить работника</button>
+            </div>
+
+            <table id="mainTable">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Имя</td>
+                        <td>Фамилия</td>
+                        <td>Дата рождения</td>
+                        <td>Фото</td>
+                        <td>Должность</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <script type="text/javascript">
+                        users = JSON.parse(getUsers(10));
+                    </script>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="EditProf" class="mainTable tabcontent">
+            <table id="profTable">
+                <thead>
+                    <tr><td></td><td>Профессия</td><td>Должностные обязанности</td><td>Удалить</td></tr>
+                </thead>
+                    <tbody>
+                    <tr>
+                        <td id="tableEmptyIdent" colspan="4" align="center">
+                            Нет данных в таблице
+                        </td>
+                    </tr>
+                        <script>
+                        </script>
+                    </tbody>
+            </table>
+
+            <div id="addProfChargeBtn">
+                <div>
+                    <label for="profInpText">Добавьте профессию: </label>
+                    <input id = "profInpText" type="text">
+                    <button class="chargeTabBtns" onclick="addNewProf();"> Добавить профессию</button>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
